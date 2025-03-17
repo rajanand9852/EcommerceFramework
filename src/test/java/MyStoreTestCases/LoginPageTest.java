@@ -16,8 +16,8 @@ public class LoginPageTest extends BaseClass {
 		indexpage= new IndexPage(driver);
 		loginpage=new LoginPage(driver);
 		indexpage.getSignButton().click();
-		loginpage.getNewEmailAddress().sendKeys("anand123@gmail.com");
-		loginpage.getCreateAnAccountButton().click();
+		//loginpage.getNewEmailAddress().sendKeys("anand123@gmail.com");
+		//loginpage.getCreateAnAccountButton().click();
 		
 	}
 

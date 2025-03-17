@@ -1,28 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-07T22:35:10 IST" name="Default suite" finished-at="2025-03-07T22:35:43 IST" duration-ms="33371">
+  <suite started-at="2025-03-17T10:35:38 IST" name="Suite" finished-at="2025-03-17T10:36:02 IST" duration-ms="24102">
     <groups>
+      <group name="regression">
+        <method signature="AddToCartPageTest.AddToCartTest()[pri:0, instance:MyStoreTestCases.AddToCartPageTest@78e4deb0]" name="AddToCartTest" class="MyStoreTestCases.AddToCartPageTest"/>
+        <method signature="AccountCreationPageTest.AccountCreationTest()[pri:0, instance:MyStoreTestCases.AccountCreationPageTest@7a35b0f5]" name="AccountCreationTest" class="MyStoreTestCases.AccountCreationPageTest"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="EndToEndTest.endToEndTest()[pri:0, instance:MyStoreTestCases.EndToEndTest@13e344d]" name="endToEndTest" class="MyStoreTestCases.EndToEndTest"/>
+        <method signature="EndToEndTest.endToEndTest()[pri:0, instance:MyStoreTestCases.EndToEndTest@2d901eb0]" name="endToEndTest" class="MyStoreTestCases.EndToEndTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-03-07T22:35:10 IST" name="Default test" finished-at="2025-03-07T22:35:43 IST" duration-ms="33371">
-      <class name="MyStoreTestCases.EndToEndTest">
-        <test-method is-config="true" signature="beforeSuitConfig()[pri:0, instance:MyStoreTestCases.EndToEndTest@13e344d]" started-at="2025-03-07T22:35:10 IST" name="beforeSuitConfig" finished-at="2025-03-07T22:35:10 IST" duration-ms="12" status="PASS">
+    <test started-at="2025-03-17T10:35:38 IST" name="Test3" finished-at="2025-03-17T10:35:58 IST" duration-ms="19825">
+      <class name="MyStoreTestCases.AccountCreationPageTest">
+        <test-method is-config="true" signature="beforeSuitConfig()[pri:0, instance:MyStoreTestCases.AccountCreationPageTest@7a35b0f5]" started-at="2025-03-17T10:35:38 IST" name="beforeSuitConfig" finished-at="2025-03-17T10:35:38 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfig -->
-        <test-method is-config="true" signature="beforeclassConfig()[pri:0, instance:MyStoreTestCases.EndToEndTest@13e344d]" started-at="2025-03-07T22:35:10 IST" name="beforeclassConfig" finished-at="2025-03-07T22:35:23 IST" duration-ms="12546" status="PASS">
+        <test-method is-config="true" signature="beforeclassConfig()[pri:0, instance:MyStoreTestCases.AccountCreationPageTest@7a35b0f5]" started-at="2025-03-17T10:35:38 IST" name="beforeclassConfig" finished-at="2025-03-17T10:35:45 IST" duration-ms="6993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclassConfig -->
-        <test-method signature="endToEndTest()[pri:0, instance:MyStoreTestCases.EndToEndTest@13e344d]" started-at="2025-03-07T22:35:23 IST" name="endToEndTest" finished-at="2025-03-07T22:35:43 IST" duration-ms="20761" status="PASS">
+        <test-method is-config="true" signature="beforeMethodConfig()[pri:0, instance:MyStoreTestCases.AccountCreationPageTest@7a35b0f5]" started-at="2025-03-17T10:35:45 IST" name="beforeMethodConfig" finished-at="2025-03-17T10:35:54 IST" duration-ms="9565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfig -->
+        <test-method signature="AccountCreationTest()[pri:0, instance:MyStoreTestCases.AccountCreationPageTest@7a35b0f5]" started-at="2025-03-17T10:35:54 IST" name="AccountCreationTest" finished-at="2025-03-17T10:35:56 IST" duration-ms="1331" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4a04b97414176b9b9703242ff494671, clickElement {id=f.8A24A3FC704165515BC2E9EA8C2C19B6.d.DE77BABE581A314BDDD5CA3F702C2958.e.52}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/3y/09_9d96x7_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50863}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50863/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (f4a04b97414176b9b9703242ff494671)] -> xpath: //a[@class='login']]
+Session ID: f4a04b97414176b9b9703242ff494671]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4a04b97414176b9b9703242ff494671, clickElement {id=f.8A24A3FC704165515BC2E9EA8C2C19B6.d.DE77BABE581A314BDDD5CA3F702C2958.e.52}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/3y/09_9d96x7_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50863}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50863/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (f4a04b97414176b9b9703242ff494671)] -> xpath: //a[@class='login']]
+Session ID: f4a04b97414176b9b9703242ff494671
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at MyStoreTestCases.AccountCreationPageTest.AccountCreationTest(AccountCreationPageTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountCreationTest -->
+        <test-method is-config="true" signature="afterMethodConfig()[pri:0, instance:MyStoreTestCases.AccountCreationPageTest@7a35b0f5]" started-at="2025-03-17T10:35:56 IST" name="afterMethodConfig" finished-at="2025-03-17T10:35:57 IST" duration-ms="1427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfig -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:MyStoreTestCases.AccountCreationPageTest@7a35b0f5]" started-at="2025-03-17T10:35:57 IST" name="afterClass" finished-at="2025-03-17T10:35:58 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- MyStoreTestCases.AccountCreationPageTest -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-03-17T10:35:38 IST" name="Test2" finished-at="2025-03-17T10:35:59 IST" duration-ms="20691">
+      <class name="MyStoreTestCases.EndToEndTest">
+        <test-method is-config="true" signature="beforeclassConfig()[pri:0, instance:MyStoreTestCases.EndToEndTest@2d901eb0]" started-at="2025-03-17T10:35:38 IST" name="beforeclassConfig" finished-at="2025-03-17T10:35:45 IST" duration-ms="6892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclassConfig -->
+        <test-method is-config="true" signature="beforeMethodConfig()[pri:0, instance:MyStoreTestCases.EndToEndTest@2d901eb0]" started-at="2025-03-17T10:35:45 IST" name="beforeMethodConfig" finished-at="2025-03-17T10:35:54 IST" duration-ms="9646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfig -->
+        <test-method signature="endToEndTest()[pri:0, instance:MyStoreTestCases.EndToEndTest@2d901eb0]" started-at="2025-03-17T10:35:54 IST" name="endToEndTest" finished-at="2025-03-17T10:35:56 IST" duration-ms="1235" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e587919f670ca51442a37db525a14fb9, sendKeysToElement {id=f.89EE91AAB67D5E573EF33611C34D7C30.d.55358CFB1A1B39B50D3351D1075AFFB8.e.30, value=[Ljava.lang.CharSequence;@7b349c2d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/3y/09_9d96x7_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50861/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (e587919f670ca51442a37db525a14fb9)] -> id: search_query_top]
+Session ID: e587919f670ca51442a37db525a14fb9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e587919f670ca51442a37db525a14fb9, sendKeysToElement {id=f.89EE91AAB67D5E573EF33611C34D7C30.d.55358CFB1A1B39B50D3351D1075AFFB8.e.30, value=[Ljava.lang.CharSequence;@7b349c2d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/3y/09_9d96x7_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50861/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (e587919f670ca51442a37db525a14fb9)] -> id: search_query_top]
+Session ID: e587919f670ca51442a37db525a14fb9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
+at MyStoreTestCases.EndToEndTest.endToEndTest(EndToEndTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToEndTest -->
+        <test-method is-config="true" signature="afterMethodConfig()[pri:0, instance:MyStoreTestCases.EndToEndTest@2d901eb0]" started-at="2025-03-17T10:35:56 IST" name="afterMethodConfig" finished-at="2025-03-17T10:35:58 IST" duration-ms="2476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfig -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:MyStoreTestCases.EndToEndTest@2d901eb0]" started-at="2025-03-17T10:35:58 IST" name="afterClass" finished-at="2025-03-17T10:35:59 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- MyStoreTestCases.EndToEndTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-03-17T10:35:38 IST" name="Test1" finished-at="2025-03-17T10:36:02 IST" duration-ms="24102">
+      <class name="MyStoreTestCases.AddToCartPageTest">
+        <test-method is-config="true" signature="beforeclassConfig()[pri:0, instance:MyStoreTestCases.AddToCartPageTest@78e4deb0]" started-at="2025-03-17T10:35:38 IST" name="beforeclassConfig" finished-at="2025-03-17T10:35:45 IST" duration-ms="6914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclassConfig -->
+        <test-method is-config="true" signature="beforeMethodConfig()[pri:0, instance:MyStoreTestCases.AddToCartPageTest@78e4deb0]" started-at="2025-03-17T10:35:45 IST" name="beforeMethodConfig" finished-at="2025-03-17T10:35:55 IST" duration-ms="10502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfig -->
+        <test-method signature="AddToCartTest()[pri:0, instance:MyStoreTestCases.AddToCartPageTest@78e4deb0]" started-at="2025-03-17T10:35:55 IST" name="AddToCartTest" finished-at="2025-03-17T10:36:01 IST" duration-ms="5204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartTest -->
+        <test-method is-config="true" signature="afterMethodConfig()[pri:0, instance:MyStoreTestCases.AddToCartPageTest@78e4deb0]" started-at="2025-03-17T10:36:01 IST" name="afterMethodConfig" finished-at="2025-03-17T10:36:02 IST" duration-ms="1149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfig -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:MyStoreTestCases.AddToCartPageTest@78e4deb0]" started-at="2025-03-17T10:36:02 IST" name="afterClass" finished-at="2025-03-17T10:36:02 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- MyStoreTestCases.AddToCartPageTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,13 +1,16 @@
 package MyStoreTestCases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import Ecommerce.GenericUtility.BaseClass;
+import Ecommerce.GenericUtility.ExcelFileUtility;
+import Ecommerce.GenericUtility.JavaUtility;
 import EcommercePageObjectRepo.AccountCreationPage;
 import EcommercePageObjectRepo.IndexPage;
 import EcommercePageObjectRepo.LoginPage;
@@ -16,15 +19,20 @@ public class AccountCreationPageTest extends BaseClass {
 	IndexPage indexPage;
 	LoginPage loginPage;
 	AccountCreationPage accountCreationPage;
+	ExcelFileUtility eUtil=new ExcelFileUtility();
+	JavaUtility jUtil=new JavaUtility();
+    	
 	
 	@Test(groups = "regression")
-	public void AccountCreationTest(WebDriver driver) throws EncryptedDocumentException, IOException {
+	public void AccountCreationTest() throws EncryptedDocumentException, IOException {
 		indexPage=new IndexPage(driver);
 		loginPage=new LoginPage(driver);
 		
+		
 		accountCreationPage=new AccountCreationPage(driver);
 		indexPage.getSignButton().click();
-		loginPage.getNewEmailAddress().sendKeys("jishu9852@gmail.com");
+		String newEmail = eUtil.toReadtheDatafromexcelFile("AccountCreation", 1, 6) +jUtil.getRandomNumber();
+		loginPage.getNewEmailAddress().sendKeys(newEmail);
 		loginPage.getCreateAnAccountButton().click();
 		accountCreationPage.getRadioButton().click();
 		

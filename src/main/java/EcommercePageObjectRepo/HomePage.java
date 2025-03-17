@@ -31,6 +31,10 @@ public class HomePage  {
      public WebElement getAddMyFirstAddress() {
 		return addMyFirstAddress;
 	}
+     public WebElement getSignOut() {
+		return SignOut;
+    	 
+     }
 	
 	
 	

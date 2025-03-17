@@ -1,5 +1,6 @@
 package MyStoreTestCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Ecommerce.GenericUtility.BaseClass;
@@ -13,7 +14,7 @@ public class indexPageTest extends BaseClass {
 		indexPage=new IndexPage(driver);
 		
 		boolean logo = indexPage.getMyStoreLogo().isDisplayed();
-		//Assert.assertTrue(logo);
+		Assert.assertTrue(logo);
 		System.out.println(logo);
 		}
         
